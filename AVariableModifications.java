@@ -1,60 +1,46 @@
+public class AVariableModifications {
+    public static void main(String[] args) {
+        int a = 3;
+        a += 10;
+        System.out.println("a after increasing by 10: " + a);
 
-    public class AVariableModifications {
-        public static void main(String[] args) {
-            int a = 3;
-            // increase the value of variable "a" by 10 and print the new value
-            System.out.println(a+10);
+        int b = 100;
+        b -= 7;
+        System.out.println("b after decreasing by 7: " + b);
 
-            int b = 100;
-            // decrease the value of b by 7 and print the new value
-            System.out.println(b-7);
+        int c = 44;
+        c *= 2;
+        System.out.println("c after doubling its value: " + c);
 
-            int c = 44;
-            // double the value of c and print the new value
-            System.out.println(c*2);
+        int d = 125;
+        d /= 5;
+        System.out.println("d after dividing by 5: " + d);
 
-            int d = 125;
-            // divide the value of d by 5 and print the new value
-            System.out.println(d/5);
+        int e = 8;
+        e = e * e * e; // Or e = (int) Math.pow(e, 3);
+        System.out.println("e after cubing its value: " + e);
 
-            int e = 8;
-            // cube the value of e and print the new value
-            System.out.println(Math.pow(e,3));
+        int f1 = 123;
+        int f2 = 345;
+        boolean f1GreaterThanF2 = f1 > f2;
+        System.out.println("f1 is greater than f2: " + f1GreaterThanF2);
 
-            int f1 = 123;
-            int f2 = 345;
-            // determine if f1 is greater than f2 (print as a boolean)
-            boolean GreaterF = f1>f2;
-            System.out.println(GreaterF);
+        int g1 = 350;
+        int g2 = 200;
+        boolean doubleG2GreaterThanG1 = 2 * g2 > g1;
+        System.out.println("Double the value of g2 is greater than g1: " + doubleG2GreaterThanG1);
 
-            int g1 = 350;
-            int g2 = 200;
-            // determine if double the value of g2 is greater
-            // than g1 (print as a boolean)
-            boolean DoubleG = g2*2 > g1;
-            System.out.println(DoubleG);
+        int h = 135798745;
+        boolean has11AsDivisor = h % 11 == 0;
+        System.out.println("h has 11 as a divisor: " + has11AsDivisor);
 
+        int i1 = 10;
+        int i2 = 3;
+        boolean i1GreaterThanI2SquaredAndSmallerThanI2Cubed = i1 > i2 * i2 && i1 < i2 * i2 * i2;
+        System.out.println("i1 is greater than i2 squared and smaller than i2 cubed: " + i1GreaterThanI2SquaredAndSmallerThanI2Cubed);
 
-            int h = 135798745;
-            // determine if h has 11 as a divisor (print as a boolean)
-            boolean EnoughNumber = h % 11 ==0;
-            System.out.println(EnoughNumber);
-
-
-            int i1 = 10;
-            int i2 = 3;
-            // determine if i1 is greater than i2 squared and smaller than i2 cubed
-            // (print as a boolean)
-            boolean IDontWantIt = i1 > (i2 * i2) && i1<(i2*i2*i2);
-            System.out.println(IDontWantIt);
-
-
-            int j = 1521;
-            // determine if j is divisible by 3 or 5 (print as a boolean)
-            boolean EnoughNumberAgain = j % 3 ==0 && j % 5 ==0;
-            System.out.println(EnoughNumberAgain);
-
-
-        }
+        int j = 1521;
+        boolean divisibleBy3Or5 = j % 3 == 0 || j % 5 == 0;
+        System.out.println("j is divisible by 3 or 5: " + divisibleBy3Or5);
     }
-
+}
